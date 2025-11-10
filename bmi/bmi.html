@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator | NutriCare</title>
+  <link rel="stylesheet" href="bmi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script defer src="bmi.js"></script>
+</head>
+<body>
+
+  <!-- 🌿 Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nutri<span>Care</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../bmi/bmi.html" class="active">BMI Calculator</a></li>
+        <li><a href="../nutrition/nutrition.html">Nutrition</a></li>
+        <li><a href="../meal/meal.html">Meal Planner</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🌿 BMI Section -->
+  <section class="bmi-section">
+    <div class="bmi-container">
+      <div class="bmi-card">
+        
+        <!-- Left: Form -->
+        <div class="bmi-form">
+          <h2>Check Your <span>BMI</span></h2>
+          <p>Find out if you’re underweight, healthy, overweight or obese.</p>
+
+          <label for="height">Height (cm):</label>
+          <input type="number" id="height" placeholder="Enter your height" />
+
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" placeholder="Enter your weight" />
+
+          <button id="calculateBtn">Calculate BMI</button>
+        </div>
+
+        <!-- Right: Result -->
+        <div class="bmi-result">
+          <h3>Your Result</h3>
+          <div id="bmiValue">--</div>
+          <div id="bmiCategory">Enter your details above.</div>
+          <img id="bmiImage" src="images/neutral.png" alt="BMI Status" />
+          <p id="bmiAdvice">Healthy living starts with balance and awareness.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌿 Footer -->
+  <footer>
+    <p>© 2025 NutriSmart | Designed by Md. Saif Uddin | For Food Engineering Students</p>
+  </footer>
+</body>
+</html>

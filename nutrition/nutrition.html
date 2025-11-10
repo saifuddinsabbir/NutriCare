@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Finder | NutriCare</title>
+  <link rel="stylesheet" href="nutrition.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script defer src="nutrition.js"></script>
+</head>
+<body>
+
+  <!-- 🌿 Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nutri<span>Care</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../bmi/bmi.html">BMI Calculator</a></li>
+        <li><a href="../nutrition/nutrition.html" class="active">Nutrition</a></li>
+        <li><a href="../meal/meal.html">Meal Planner</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🥗 Nutrition Calculator Section -->
+  <section class="nutrition-section">
+    <div class="nutrition-container">
+
+      <h2>Food Nutrition <span>Finder</span></h2>
+      <p>Select a food item to see its nutritional value per 100g.</p>
+
+      <div class="calculator-card">
+        <!-- Left Section -->
+        <div class="left">
+          <label for="foodSelect">Choose Food:</label>
+          <select id="foodSelect">
+            <option value="">-- Select a food item --</option>
+              <option value="rice">Rice (ভাত)</option>
+              <option value="bread">Bread (রুটি)</option>
+              <option value="lentil">Lentil (ডাল)</option>
+              <option value="egg">Egg (ডিম)</option>
+              <option value="fish">Fish (মাছ)</option>
+              <option value="chicken">Chicken (মুরগি)</option>
+              <option value="beef">Beef (গরুর মাংস)</option>
+              <option value="mutton">Mutton (খাসির মাংস)</option>
+              <option value="spinach">Spinach (পালং শাক)</option>
+              <option value="pumpkin">Pumpkin (কুমড়া)</option>
+              <option value="cabbage">Cabbage (বাঁধাকপি)</option>
+              <option value="carrot">Carrot (গাজর)</option>
+              <option value="potato">Potato (আলু)</option>
+              <option value="tomato">Tomato (টমেটো)</option>
+              <option value="bitterGourd">Bitter Gourd (করলা)</option>
+              <option value="okra">Okra (ঢেঁড়স)</option>
+              <option value="banana">Banana (কলা)</option>
+              <option value="apple">Apple (আপেল)</option>
+              <option value="mango">Mango (আম)</option>
+              <option value="papaya">Papaya (পেপে)</option>
+              <option value="orange">Orange (কমলা)</option>
+              <option value="guava">Guava (পেয়ারা)</option>
+              <option value="jackfruit">Jackfruit (কাঁঠাল)</option>
+              <option value="watermelon">Watermelon (তরমুজ)</option>
+              <option value="milk">Milk (দুধ)</option>
+              <option value="tea">Tea (চা)</option>
+              <option value="coffee">Coffee (কফি)</option>
+              <option value="lemonWater">Lemon Water (লেবুর শরবত)</option>
+              <option value="fruitJuice">Fruit Juice (ফলের রস)</option>
+          </select>
+
+          <!-- Image container (hidden initially) -->
+          <img id="foodImage" src="" alt="Food Image" style="display:none;" />
+        </div>
+
+        <!-- Right Section -->
+        <div class="right" id="nutritionResult">
+          <h3>Nutrition Information</h3>
+          <p>Select a food item to view details.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🌿 Footer -->
+  <footer>
+    <p>© 2025 NutriSmart | Designed by Md. Saif Uddin | For Food Engineering Students</p>
+  </footer>
+
+</body>
+</html>

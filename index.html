@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriSmart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <!-- 🌿 Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nutri<span>Care</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="bmi/bmi.html">BMI Calculator</a></li>
+        <li><a href="nutrition/nutrition.html">Nutrition</a></li>
+        <li><a href="meal/meal.html">Meal Planner</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== Banner ========== -->
+  <section class="banner">
+    <div class="banner-content">
+      <h2 id="bannerText">Eat Smart, Stay Fit</h2>
+      <p>Discover your health companion — plan meals, calculate BMI & nutrition, and learn about seasonal foods.</p>
+      <button onclick="scrollToFeatures()">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- ========== Features ========== -->
+  <section class="features" id="features">
+    <h2>Our Smart Tools</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="BMI">
+        <h3>BMI Calculator</h3>
+        <p>Know your Body Mass Index instantly and track your fitness level.</p>
+        <a href="bmi/bmi.html" class="card-link">Try Now →</a>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4151/4151084.png" alt="Nutrition">
+        <h3>Nutrition Calculator</h3>
+        <p>Estimate calories and protein from common food items easily.</p>
+        <a href="nutrition/nutrition.html" class="card-link">Check Nutrition →</a>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Meal Planner">
+        <h3>Healthy Meal Planner</h3>
+        <p>Get balanced meal plans based on your goals and preferences.</p>
+        <a href="meal/meal.html" class="card-link">Plan My Meal →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== About Section ========== -->
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1619566636858-6b8f4ac1f8d3?auto=format&fit=crop&w=800&q=80"
+      alt="Healthy Food">
+    <div class="about-text">
+      <h2>About NutriSmart</h2>
+      <p>NutriSmart is a digital initiative designed to promote healthy living through awareness and guidance. From
+        calculating your BMI to suggesting healthy meals, we combine traditional nutrition principles with modern web
+        interactivity.</p>
+      <p>Built with HTML, CSS, and JavaScript, this platform reflects how technology can inspire better health choices —
+        without needing any database or backend!</p>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    © 2025 NutriSmart | Developed by Md. Saif Uddin | For Food Engineering Dept., BAU
+  </footer>
+
+  <!-- ========== JavaScript ========== -->
+  <script>
+    // Smooth scroll to features
+    function scrollToFeatures() {
+      document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Dynamic Banner Text
+    const bannerTexts = [
+      "Eat Smart, Stay Fit",
+      "Calculate, Plan & Live Healthy",
+      "Smart Food for a Smart Life"
+    ];
+    let idx = 0;
+    setInterval(() => {
+      idx = (idx + 1) % bannerTexts.length;
+      document.getElementById("bannerText").textContent = bannerTexts[idx];
+    }, 4000);
+
+    // Dark Mode Toggle
+    const darkBtn = document.getElementById("darkModeBtn");
+    darkBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      darkBtn.textContent = document.body.classList.contains("dark") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+
+</html>

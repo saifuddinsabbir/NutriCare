@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Planner | NutriCare</title>
+  <link rel="stylesheet" href="meal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script defer src="meal.js"></script>
+</head>
+<body>
+
+  <!-- 🌿 Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nutri<span>Care</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../bmi/bmi.html">BMI Calculator</a></li>
+        <li><a href="../nutrition/nutrition.html">Nutrition</a></li>
+        <li><a href="../meal/meal.html" class="active">Meal Planner</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🍽️ Meal Planner Section -->
+  <section class="meal-section">
+    <div class="meal-container">
+      <h2>Healthy <span>Meal Planner</span></h2>
+      <p>Select your goal to get a recommended daily meal plan.</p>
+
+      <div class="goal-selection">
+        <button class="goal-btn" data-goal="weightLoss">Weight Loss (ওজন কমানো)</button>
+        <button class="goal-btn" data-goal="weightGain">Weight Gain (ওজন বৃদ্ধি)</button>
+        <button class="goal-btn" data-goal="maintain">Maintain Weight (ওজন বজায় রাখা)</button>
+      </div>
+
+      <div class="meal-cards" id="mealCards">
+        <p>Select a goal above to see meal suggestions.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🌿 Footer -->
+  <footer>
+    <p>© 2025 NutriSmart | Designed by Md. Saif Uddin | For Food Engineering Students</p>
+  </footer>
+
+</body>
+</html>
